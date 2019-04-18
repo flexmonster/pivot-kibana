@@ -1,0 +1,1 @@
+export { FlexmonsterPivotTable } from './flexmonsterpivottable';
