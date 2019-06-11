@@ -1,37 +1,49 @@
-# flexmonster_pivot
+# Flexmonster Pivot plugin for Kibana
+[![Flexmonster Pivot Table & Charts](https://s3.amazonaws.com/flexmonster/github/fm-github-cover.png)](https://www.flexmonster.com/)
+Website: [flexmonster.com](https://www.flexmonster.com/)
 
-> Flexmonster Pivot Table
+This repository holds Flexmonster Pivot plugin for [Kibana](https://www.elastic.co/products/kibana).
 
----
+## Requirements
 
-## development
+The version of Kibana should be compatible with Elasticsearch. For more details, check [support matrix](https://www.elastic.co/support/matrix#matrix_compatibility). 
 
-See the [kibana contributing guide](https://github.com/elastic/kibana/blob/master/CONTRIBUTING.md) for instructions setting up your development environment. Once you have completed that, use the following yarn scripts.
+## Step 1: Install Flexmonster Pivot plugin
 
-  - `yarn kbn bootstrap`
+Navigate to Kibana `bin/` folder and run in the console:
 
-    Install dependencies and crosslink Kibana and all projects/plugins.
+```bash
+kibana-plugin install https://github.com/flexmonster/pivot-kibana/releases/download/v1.02/flexmonster_pivot-v1.02.zip
+```
 
-    > ***IMPORTANT:*** Use this script instead of `yarn` to install dependencies when switching branches, and re-run it whenever your dependencies change.
+## Step 2: Enable CORS for Elasticsearch 
 
-  - `yarn start`
+Open `elasticsearch.yml` and add the following configuration:
 
-    Start kibana and have it include this plugin. You can pass any arguments that you would normally send to `bin/kibana`
+```bash
+http.cors.enabled : true
+http.cors.allow-origin : "*"
+http.cors.allow-credentials: true
+http.cors.allow-methods : OPTIONS, HEAD, GET, POST, PUT, DELETE
+http.cors.allow-headers : kbn-version, Origin, X-Requested-With, Content-Type, Accept, Engaged-Auth-Token, Content-Length, Authorization
+```
 
-      ```
-      yarn start --elasticsearch.hosts http://localhost:9220
-      ```
+## Step 3: Enable CORS for Kibana
 
-  - `yarn build`
+Open `kibana.yml` and add the following configuration:
 
-    Build a distributable archive of your plugin.
+```bash
+elasticsearch.hosts: ["http://localhost:9200"]
+server.cors: true
+server.cors.origin: ['*']
+```
 
-  - `yarn test:browser`
+After that, a new tab with Flexmonster Pivot will be available if you open Kibana.
 
-    Run the browser tests in a real web browser.
+# Resources
+- [Demos](https://www.flexmonster.com/demos/)
+- [Documentation](https://www.flexmonster.com/doc/)
+- [Set of tools](https://www.flexmonster.com/set-of-tools/)
+- [Blog](https://www.flexmonster.com/blog/)
 
-  - `yarn test:server`
-
-    Run the server tests using mocha.
-
-For more information about any of these commands run `yarn ${task} --help`. For a full list of tasks checkout the `package.json` file, or run `yarn run`.
+Also you can get all support from our development team on [Forum](https://www.flexmonster.com/forum/). Flexmonster developers react fast to the questions and provide professional assistance.
