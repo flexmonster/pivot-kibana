@@ -1,0 +1,147 @@
+﻿@import "..\flexmonster-base.less";
+
+@font-family: Arial, sans-serif;
+@font-size: 12px;
+@font-size-mobile: 14px;
+
+/* ===== theme colors ===== */
+/* ===== not used in flexmonster-base.less directly; used in this file to define bg, border and other colors ===== */
+@theme-color: #868e94;
+@theme-color-dark: #d5d5d5;
+@theme-color-superdark: #868e94;
+@theme-color-midlight: #03A9F4; //not used
+@theme-color-light: #03A9F4; //not used
+@theme-color-superlight: #303030;
+@theme-color-supersuperlight: #424242;
+@theme-color-danger: #F44336;
+
+/* ===== basic grey colors, common for all themes ===== */
+@theme-base-color: #999;
+@theme-base-color-dark: #555;
+@theme-base-color-superdark: #3c3c3c;
+@theme-base-color-midlight: @theme-color;
+@theme-base-color-light: @theme-color;
+@theme-base-color-superlight: #f7f7f7;
+@theme-base-color-supersuperlight: #fbfbfb;
+
+/* ===== text colors ===== */
+@theme-text-color: #f2f2f2;
+@theme-text-color-inverted: #212121;
+@theme-text-color-midlight: @theme-text-color;
+@theme-text-color-light: #d5d5d5;
+@theme-text-color-superlight: #cecece;
+
+@toolbar-text-color: #bababa;
+@toolbar-icon-fill-border: #bababa;
+@toolbar-icon-fill-background: transparent;
+
+/* ===== background colors ===== */
+@background-base-color: #212121;
+@background-ui-element-base-color: #212121;
+@ui-background-dark: @theme-color;
+@ui-background: @theme-color;
+@ui-background-light: @theme-color-superlight;
+@ui-background-superlight: #303030;
+
+/* ===== border colors ===== */
+@ui-border-color-dark: @theme-color;
+@ui-border-color: @theme-color;
+@ui-border-color-light: #424242;
+@ui-border-color-superlight: @theme-color-superlight;
+@ui-border-dark: 1px solid @ui-border-color;
+@ui-border: 1px solid @ui-border-color;
+@ui-border-light: 1px solid @ui-border-color-light;
+@ui-border-superlight: 1px solid @ui-border-color-superlight;
+
+/* ===== grid ===== */
+@grid-sheet-header-text-color: @theme-color;
+@grid-sheet-header-color: #303030;
+@grid-sheet-header-border-color: #424242;
+@grid-sheet-header-border: 1px solid @grid-sheet-header-border-color;
+@grid-icon-color: @theme-text-color-midlight;
+@grid-table-header-text-color: @theme-text-color-midlight;
+@grid-table-header-color: @theme-color-supersuperlight;
+@grid-table-header-border-color: #424242;
+@grid-table-header-border: 1px solid @grid-table-header-border-color;
+@grid-filter-color: #515151;
+@grid-filter-color-hover: @theme-color;
+@grid-filter-text-color: #f2f2f2;
+@grid-filter-subtext-color: @grid-filter-text-color;
+@grid-filter-icon-color: @grid-filter-text-color;
+@grid-cell-color: @background-base-color;
+@grid-cell-text-color: @theme-text-color;
+@grid-cell-border-color: #303030;
+@grid-cell-border: 1px solid @grid-cell-border-color;
+@grid-drilldown-link-text-color: #bababa;
+@grid-selection-canvas-color: rgba(134, 142, 148, 0.2);
+@grid-selection-canvas-border: 2px solid @theme-base-color-light;
+@grid-auto-calculation-bar: #515151;
+
+/* ===== charts ===== */
+@charts-label-font-size: 14px;
+@charts-axis-font-size: 14px;
+@charts-axis-text-color: @theme-text-color;
+@charts-axis-title-color: @theme-text-color;
+@charts-pie-label-color: @theme-text-color;
+
+/* ===== ui ===== */
+@ui-component-border: @ui-border-light;
+@ui-pop-up-border: @ui-border-light;
+@ui-element-border-color: @ui-border-color-light;
+@ui-element-border: @ui-border-light;
+@ui-element-inner-border: @ui-border-light;
+
+@ui-element-text-color: @theme-text-color;
+@ui-element-font-size: 14px;
+
+@ui-btn-dark-color-hover: #d5d5d5;
+@ui-btn-color-hover: #424242;
+@ui-btn-color-light-hover: #424242;
+@ui-btn-border-radius: 4px;
+
+@ui-btn-font-size: 14px; 
+@ui-btn-text-color: @theme-color-dark;
+@ui-btn-dark-text-color: @theme-text-color-inverted;
+@ui-btn-light-text-color: @theme-text-color;
+@ui-btn-toggle-text-color: @theme-color;
+@ui-btn-toggle-selected-text-color: @theme-text-color;
+@ui-btn-toggle-dark-text-color: @ui-element-text-color;
+@ui-btn-toggle-dark-selected-text-color: @theme-text-color-inverted;
+@ui-btn-calc-text-color: @theme-text-color-inverted;
+
+@ui-icon-color: @theme-color;
+@ui-icon-color-dark: @theme-color-dark;
+
+@ui-label-color-dark: @theme-color-dark;
+@ui-label-color: @theme-text-color;
+@ui-label-color-light: @theme-text-color;
+@ui-label-font-size: 14px;
+@ui-text-area-color: @theme-text-color-inverted;
+@ui-title-color: @theme-text-color;
+@ui-title-font-size: 24px;
+@ui-title-font-size-smaller: 18px;
+@ui-subtitle-color: @ui-label-color-light;
+@ui-subtitle-font-size: @ui-label-font-size;
+
+@ui-prompt-color: @theme-text-color-superlight;
+@ui-prompt-icon-color: @ui-border-color-superlight;
+
+.fm-charts-color-1 {
+    fill: #2b908f;
+}
+
+.fm-charts-color-2 {
+    fill: #90ee7e;
+}
+
+.fm-charts-color-3 {
+    fill: #f45b5b;
+}
+
+.fm-charts-color-4 {
+    fill: #7798bf;
+}
+
+.fm-charts-color-5 {
+    fill: none;
+}

@@ -15,6 +15,7 @@ import {
   EuiText
 } from '@elastic/eui';
 import * as FlexmonsterReact from 'react-flexmonster';
+import 'flexmonster/flexmonster.min.css';
 
 class PivotTable extends React.Component {
   constructor(props) {
@@ -91,8 +92,8 @@ export class FlexmonsterPivotTable extends React.Component {
             <EuiTitle size="m">
               <EuiFlexGroup>
                 <EuiFlexItem grow={false}>
-                  <EuiImage size="m" allowFullScreen="false" alt="Flexmonster Pivot Table"
-                    url="https://www.flexmonster.com/base/assets/img/svg/logo.svg" />
+                  <EuiImage alt="Flexmonster Pivot Table"
+                    url="https://cdn.flexmonster.com/logo_only.png" />
                 </EuiFlexItem>
                 <EuiFlexItem>
                   <h1>
