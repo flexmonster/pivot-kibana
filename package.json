@@ -1,10 +1,10 @@
 {
   "name": "flexmonster_pivot",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Flexmonster Pivot Table",
   "main": "index.js",
   "kibana": {
-    "version": ">7.1.1",
+    "version": "7.2.0",
     "templateVersion": "1.0.0"
   },
   "scripts": {
