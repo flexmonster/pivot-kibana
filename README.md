@@ -38,7 +38,11 @@ server.cors: true
 server.cors.origin: ['*']
 ```
 
-After that, a new tab with Flexmonster Pivot will be available if you open Kibana.
+## Step 4: See the results
+
+A new tab with Flexmonster Pivot will be available if you open Kibana.
+
+![Pivot in Kibana](https://www.flexmonster.com/fm_uploads/2019/07/CreateReportKibanaFM.gif)
 
 # Resources
 - [Demos](https://www.flexmonster.com/demos/)
