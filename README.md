@@ -14,6 +14,8 @@ Navigate to Kibana `bin/` folder and run in the console:
 
 ```bash
 kibana-plugin install https://github.com/flexmonster/pivot-kibana/releases/download/v1.14/flexmonster_pivot-v1.14.zip
+cd plugins/flexmonster_pivot
+yarn upgrade
 ```
 
 ## Step 2: Enable CORS for Elasticsearch 
