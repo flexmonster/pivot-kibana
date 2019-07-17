@@ -13,7 +13,7 @@ The version of Kibana should be compatible with Elasticsearch. For more details,
 Navigate to Kibana `bin/` folder and run in the console:
 
 ```bash
-kibana-plugin install https://github.com/flexmonster/pivot-kibana/releases/download/v1.13/flexmonster_pivot-v1.13.zip
+kibana-plugin install https://github.com/flexmonster/pivot-kibana/releases/download/v1.14/flexmonster_pivot-v1.14.zip
 ```
 
 ## Step 2: Enable CORS for Elasticsearch 
