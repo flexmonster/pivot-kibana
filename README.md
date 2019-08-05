@@ -26,8 +26,8 @@ Open `elasticsearch.yml` and add the following configuration:
 http.cors.enabled : true
 http.cors.allow-origin : "*"
 http.cors.allow-credentials: true
-http.cors.allow-methods : OPTIONS, HEAD, GET, POST, PUT, DELETE
-http.cors.allow-headers : kbn-version, Origin, X-Requested-With, Content-Type, Accept, Engaged-Auth-Token, Content-Length, Authorization
+http.cors.allow-methods : OPTIONS,HEAD,GET,POST,PUT,DELETE
+http.cors.allow-headers : kbn-version,Origin,X-Requested-With,Content-Type,Accept,Engaged-Auth-Token,Content-Length,Authorization
 ```
 
 ## Step 3: Enable CORS for Kibana
