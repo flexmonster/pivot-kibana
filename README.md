@@ -13,7 +13,7 @@ The version of Kibana should be compatible with Elasticsearch. For more details,
 Navigate to Kibana `bin/` folder and run in the console:
 
 ```bash
-kibana-plugin install https://github.com/flexmonster/pivot-kibana/releases/download/v1.15/flexmonster_pivot-v1.15.zip
+kibana-plugin install https://github.com/flexmonster/pivot-kibana/releases/download/v1.16/flexmonster_pivot-v1.16.zip
 cd plugins/flexmonster_pivot
 yarn upgrade
 ```
