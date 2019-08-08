@@ -49,9 +49,7 @@ class PivotTable extends React.Component {
 export class FlexmonsterPivotTable extends React.Component {
   constructor(props) {
     super(props);
-
     this.esClient = props.esClient;
-
     this.state = { selectedOptions: [], options: [], isLoading: true, showPivotTable: false };
     this.loadIndices();
   }

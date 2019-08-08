@@ -9,9 +9,7 @@ import { FlexmonsterPivotTable } from './components/flexmonster/FlexmonsterPivot
 
 const app = uiModules.get('apps/flexmonsterPivot', ['elasticsearch'])
   .service('es', function (esFactory) {
-    return esFactory({
-      host: 'localhost:9200'
-    });
+    return esFactory;
   });
 
 app.config($locationProvider => {
@@ -27,23 +25,18 @@ app.config(stateManagementConfigProvider =>
 
 function RootController($scope, $element, $http, es) {
   const domNode = $element[0];
-  this.esClient = es;
 
-  this.esClient.cluster.health(function (err, resp) {
-    if (err) {
-      $scope.data = err.message;
-    } else {
-      $scope.data = resp;
+  $http.get('../api/flexmonster_pivot/es').then(
+    (resp) => {
+      const esClient = es(resp.data);
+      // render react to DOM
+      render(<FlexmonsterPivotTable esClient={esClient}/>, domNode);
     }
-  });
-
-  // render react to DOM
-  render(<FlexmonsterPivotTable httpClient={$http} esClient={this.esClient}/>, domNode);
-
+  );
+  
   // unmount react on controller destroy
   $scope.$on('$destroy', () => {
     unmountComponentAtNode(domNode);
   });
 }
-
 chrome.setRootController('flexmonsterPivot', RootController);
