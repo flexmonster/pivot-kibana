@@ -1,4 +1,6 @@
 {
+  "author": "Flexmonster",
+  "license": "MIT",
   "name": "flexmonster_pivot",
   "version": "1.1.8",
   "description": "Flexmonster Pivot Table",
