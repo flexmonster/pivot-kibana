@@ -2,7 +2,7 @@
   "author": "Flexmonster",
   "license": "MIT",
   "name": "flexmonster_pivot",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "Flexmonster Pivot Table",
   "main": "index.js",
   "kibana": {
