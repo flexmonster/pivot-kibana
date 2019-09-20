@@ -73,8 +73,7 @@ Here is an example how such attributes can be specified:
 <FlexmonsterReact.Pivot toolbar={true} 
   componentFolder="https://cdn.flexmonster.com/" 
   width="100%" 
-  report="https://cdn.flexmonster.com/reports/report.json"
-/>
+  report="https://cdn.flexmonster.com/reports/report.json"/>
 ```
 
 ## <a name="license"></a>License ##

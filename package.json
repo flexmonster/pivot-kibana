@@ -1,8 +1,7 @@
 {
-  "author": "Flexmonster",
   "license": "MIT",
   "name": "flexmonster_pivot",
-  "version": "1.1.9",
+  "version": "1.2.0",
   "description": "Flexmonster Pivot Table",
   "main": "index.js",
   "kibana": {
@@ -10,7 +9,6 @@
     "templateVersion": "1.0.0"
   },
   "scripts": {
-    "preinstall": "node ../../preinstall_check",
     "kbn": "node ../../scripts/kbn",
     "es": "node ../../scripts/es",
     "lint": "eslint .",
@@ -22,6 +20,6 @@
   "dependencies": {
     "elasticsearch": "^15.0.0",
     "elasticsearch-browser": "^15.0.0",
-    "react-flexmonster": "latest"
+    "react-flexmonster": "^2.7.14"
   }
 }
