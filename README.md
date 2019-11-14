@@ -7,13 +7,14 @@ This repository holds Flexmonster Pivot plugin for [Kibana](https://www.elastic.
 ## Requirements
 
 The version of Kibana should be compatible with Elasticsearch. For more details, check [support matrix](https://www.elastic.co/support/matrix#matrix_compatibility). 
+**Release 1.21 of the plugin works with Kibana 7.3.2.** For the latest versions, please make changes in the package.json and/or other files if necessary.
 
 ## Step 1: Install Flexmonster Pivot plugin
 
 Navigate to Kibana `bin/` folder and run in the console:
 
 ```bash
-kibana-plugin install https://github.com/flexmonster/pivot-kibana/releases/download/v1.23/flexmonster_pivot-v1.23.zip
+kibana-plugin install https://github.com/flexmonster/pivot-kibana/releases/download/v1.21/flexmonster_pivot-v1.21.zip
 cd plugins/flexmonster_pivot
 yarn upgrade
 ```
