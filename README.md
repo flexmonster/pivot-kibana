@@ -1,6 +1,6 @@
 # Flexmonster Pivot plugin for Kibana
 
-### NOTICE - Suspended from development
+### :warning: NOTICE - Suspended from development
 **Due to breaking changes in last versions of Kibana, there are numerous issues with maintaining the working version. Therefore, the plugin is currently suspended from further development.**
 
 Still, the currently available groundwork is free to use for your own custom integrations.
@@ -12,8 +12,7 @@ The following is the most recent working configuration:
 
 Feel free to check out the [Issues](https://github.com/flexmonster/pivot-kibana/issues "Issues") page if you have additional questions on plugin compatibility.
 
-[![Flexmonster Pivot Table & Charts](https://s3.amazonaws.com/flexmonster/github/fm-github-cover.png)](https://www.flexmonster.com/)
-Website: [flexmonster.com](https://www.flexmonster.com/)
+---
 
 This repository holds Flexmonster Pivot plugin for [Kibana](https://www.elastic.co/products/kibana).
 
