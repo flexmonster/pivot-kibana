@@ -29,6 +29,7 @@ kibana-plugin install https://github.com/flexmonster/pivot-kibana/releases/downl
 cd plugins/flexmonster_pivot
 yarn upgrade
 yarn install react-flexmonster@2.7.24
+yarn install flexmonster@2.7.24
 ```
 
 ## Step 2: Enable CORS for Elasticsearch 
