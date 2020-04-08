@@ -5,13 +5,6 @@
 
 Still, the currently available groundwork is free to use for your own custom integrations.
 
-The following is the most recent working configuration:
-- Kibana v.7.3.2
-- Plugin v.1.21
-- Flexmonster v.2.7.24
-
-Feel free to check out the [Issues](https://github.com/flexmonster/pivot-kibana/issues "Issues") page if you have additional questions on plugin compatibility.
-
 ---
 
 This repository holds Flexmonster Pivot plugin for [Kibana](https://www.elastic.co/products/kibana).
@@ -21,6 +14,11 @@ This repository holds Flexmonster Pivot plugin for [Kibana](https://www.elastic.
 The version of Kibana should be compatible with Elasticsearch. For more details, check [support matrix](https://www.elastic.co/support/matrix#matrix_compatibility). 
 
 For the latest versions, please make changes in the package.json and/or other files if necessary.
+
+The following is the most recent working configuration:
+- Kibana v.7.3.2
+- Plugin v.1.21
+- react-flexmonster@2.7.24
 
 ## Step 1: Install Flexmonster Pivot plugin
 
