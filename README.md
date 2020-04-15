@@ -31,7 +31,7 @@ yarn upgrade react-flexmonster@2.7.24-1
 yarn upgrade flexmonster@2.7.24
 ```
 
-## Step 2: Add the license key in `FlexmonsterPivotTable.js`:
+## Step 2: Add the license key in [`FlexmonsterPivotTable.js`](https://github.com/flexmonster/pivot-kibana/blob/master/public/components/flexmonster/FlexmonsterPivotTable.js#L42):
 ```bash
   <FlexmonsterReact.Pivot ref="pivot" toolbar={true}
         componentFolder="https://cdn.flexmonster.com/" 
