@@ -27,12 +27,23 @@ Navigate to Kibana `bin/` folder and run in the console:
 ```bash
 kibana-plugin install https://github.com/flexmonster/pivot-kibana/releases/download/v1.21/flexmonster_pivot-v1.21.zip
 cd plugins/flexmonster_pivot
-yarn upgrade
-yarn add react-flexmonster@2.7.24
-yarn add flexmonster@2.7.24
+yarn upgrade react-flexmonster@2.7.24-1
+yarn upgrade flexmonster@2.7.24
 ```
 
-## Step 2: Enable CORS for Elasticsearch 
+## Step 2: Add the license key in `FlexmonsterPivotTable.js`:
+```bash
+  <FlexmonsterReact.Pivot ref="pivot" toolbar={true}
+        componentFolder="https://cdn.flexmonster.com/" 
+        width="100%"
+        licenseKey="XXXX-XXXX-XXXX-XXXX-XXXX"
+        report={this.props.report} />
+```
+
+Note that licenseKey is your license or trial key, so replace XXXX-XXXX-XXXX-XXXX-XXXX with an actual key. If you don’t have a license key, [get a trial key here](https://www.flexmonster.com/download-page/).
+
+
+## Step 3: Enable CORS for Elasticsearch 
 
 Open `elasticsearch.yml` and add the following configuration:
 
@@ -44,7 +55,7 @@ http.cors.allow-methods : OPTIONS,HEAD,GET,POST,PUT,DELETE
 http.cors.allow-headers : kbn-version,Origin,X-Requested-With,Content-Type,Accept,Engaged-Auth-Token,Content-Length,Authorization
 ```
 
-## Step 3: Enable CORS for Kibana
+## Step 4: Enable CORS for Kibana
 
 Open `kibana.yml` and add the following configuration:
 
@@ -54,7 +65,7 @@ server.cors: true
 server.cors.origin: ['*']
 ```
 
-## Step 4: See the results
+## Step 5: See the results
 
 A new tab with Flexmonster Pivot will be available if you open Kibana:
 
