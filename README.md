@@ -27,8 +27,8 @@ Navigate to Kibana `bin/` folder and run in the console:
 ```bash
 kibana-plugin install https://github.com/flexmonster/pivot-kibana/releases/download/v1.21/flexmonster_pivot-v1.21.zip
 cd plugins/flexmonster_pivot
-yarn upgrade react-flexmonster@2.7.24-1
-yarn upgrade flexmonster@2.7.24
+yarn add flexmonster@2.7.24 --flat
+yarn add react-flexmonster@2.7.24-1 --flat
 ```
 
 ## Step 2: Add the license key in [`FlexmonsterPivotTable.js`](https://github.com/flexmonster/pivot-kibana/blob/master/public/components/flexmonster/FlexmonsterPivotTable.js#L42):
