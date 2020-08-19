@@ -1,7 +1,7 @@
 # Flexmonster Pivot plugin for Kibana
 
-### :warning: NOTICE - Suspended from development
-**Due to breaking changes in last versions of Kibana, there are numerous issues with maintaining the working version. Therefore, the plugin is currently suspended from further development.**
+### :warning: NOTICE - The plugin development is ceased
+**Due to breaking changes in last versions of Kibana, there are numerous issues with maintaining the working version. Therefore, the further development of the plugin is currently ceased.**
 
 Still, the currently available groundwork is free to use for your own custom integrations.
 
