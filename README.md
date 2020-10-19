@@ -9,7 +9,7 @@ Still, the currently available groundwork is free to use for your own custom int
 
 ## Flexmonster Pivot Table & Charts
 
-Flexmonster Pivot is a powerful JavaScript tool for interactive web reporting. It allows you to visualize and analyze data from JSON, CSV, SQL, NoSQL, Elasticsearch, and OLAP data sources fast and conveniently. Flexmonster is designed to integrate seamlessly with any client-side framework and can be easily embedded into your application.
+Flexmonster Pivot is a powerful JavaScript tool for interactive web reporting. It allows you to visualize and analyze data from JSON, CSV, SQL, NoSQL, Elasticsearch, and OLAP data sources quickly and conveniently. Flexmonster is designed to integrate seamlessly with any client-side framework and can be easily embedded into your application.
 
 This repository holds Flexmonster Pivot plugin for [Kibana](https://www.elastic.co/products/kibana).
 
