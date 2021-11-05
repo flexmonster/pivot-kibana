@@ -80,4 +80,4 @@ A new tab with Flexmonster Pivot will be available if you open Kibana:
 - [Documentation](https://www.flexmonster.com/doc/)
 - [Set of tools](https://www.flexmonster.com/set-of-tools/)
 - [Blog](https://www.flexmonster.com/blog/)
-- [Flexmonster Help Center](https://www.flexmonster.com/help-center/).
+- [Flexmonster Help Center](https://www.flexmonster.com/help-center/)
