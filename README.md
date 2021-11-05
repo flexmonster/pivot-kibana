@@ -81,4 +81,4 @@ A new tab with Flexmonster Pivot will be available if you open Kibana:
 - [Set of tools](https://www.flexmonster.com/set-of-tools/)
 - [Blog](https://www.flexmonster.com/blog/)
 
-Also you can get all support from our development team on [Forum](https://www.flexmonster.com/forum/). Flexmonster developers react fast to the questions and provide professional assistance.
+You can also submit your technical questions via [Flexmonster Help Center](https://www.flexmonster.com/help-center/). Our Tech team reacts fast to the questions and provides professional assistance.
