@@ -46,7 +46,7 @@ Specify the license key in [FlexmonsterPivotTable.js](https://github.com/flexmon
   toolbar={true}
   componentFolder="https://cdn.flexmonster.com/" 
   report={this.props.report}
-  *licenseKey="XXXX-XXXX-XXXX-XXXX-XXXX"*
+  licenseKey="XXXX-XXXX-XXXX-XXXX-XXXX"
 />
 ```
 
